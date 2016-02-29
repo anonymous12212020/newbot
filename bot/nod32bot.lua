@@ -335,7 +335,11 @@ ch: @extremeteam
 
 ]],
     help_text = [[
-~~~~~~~~~~~~~
+!helpall 
+full help
+!help>
+helpful
+ch : @extremeteam
 ]]
    }
   serialize_to_file(config, './data/config.lua')
