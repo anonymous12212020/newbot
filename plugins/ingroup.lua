@@ -1064,7 +1064,7 @@ local function run(msg, matches)
         return set_descriptionmod(msg, data, target, about)
       end --behroozyaghi
     end
-    if matches[1] == 'gp+' then
+    if matches[1] == 'close' then
       local target = msg.to.id
       if matches[2] == 'name' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked name ")
@@ -1103,7 +1103,7 @@ local function run(msg, matches)
        return lock_group_join(msg, data, target)
      end
    end
-    if matches[1] == 'gp-' then 
+    if matches[1] == 'open' then 
       local target = msg.to.id
       if matches[2] == 'name' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked name ")
@@ -1146,7 +1146,7 @@ local function run(msg, matches)
        return unlock_group_fosh(msg, data, target)
      end
    end
-    if matches[1] == 'gp?' then
+    if matches[1] == 'gp' then
       local target = msg.to.id
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group settings ")
       return show_group_settingsmod(msg, data, target)
@@ -1353,15 +1353,15 @@ return {
   "^[!/](moddem) (.*)$",
   "^[!/](moddem)",
   "^[!/](set) ([^%s]+) (.*)$",
-  "^[!/](gp+) (.*)$",
+  "^[!/](close) (.*)$",
   "^[!/](setleader) (%d+)$",
   "^[!/](setleader)",
   "^[!/](leader)$",
   "^[!/](who) (.*)$",
   "^[!/](setgpowner) (%d+) (%d+)$",-- (group id) (owner id)
-  "^[!/](gp-) (.*)$",
+  "^[!/](open) (.*)$",
   "^[!/](flood) (%d+)$",
-  "^[!/](gp?)$",
+  "^[!/](gp)$",
   "^[!/](public) (.*)$",
   "^[!/](modlist)$",
   "^[!/](newlink)$",
@@ -1382,15 +1382,15 @@ return {
   "^([Mm]oddem) (.*)$",
   "^([m]oddem)$",
   "^([Ss]et) ([^%s]+) (.*)$",
-  "^([Gg]p+) (.*)$",
+  "^([Cc]lose) (.*)$",
   "^([Ss]etleader) (%d+)$",
   "^([Ss]etleader)$",
   "^([Ll]eader)$",
   "^([Ww]ho) (.*)$",
   "^([Ss]etgpowner) (%d+) (%d+)$",-- (group id) (owner id)
-  "^([Gg]p-) (.*)$",
+  "^([Oo]pen) (.*)$",
   "^([Ff]lood) (%d+)$",
-  "^([Gg]p?)$",
+  "^([Gg]p)$",
   "^([Mm]odlist)$",
   "^([Nn]ewlink)$",
   "^([Ll]ink)$",
