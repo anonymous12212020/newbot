@@ -44,10 +44,10 @@ Group rules
 !help
 This help full text
 〰〰〰〰〰〰
-!gp+ [member|name|bots|leave|arabic|tag|ads] 
+!close [member|name|bots|leave|arabic|tag|ads] 
 Locks [member|name|bots|leaveing|arabic|tag|ads] 
 〰〰〰〰〰〰
-!gp- [member|name|bots|leave|arabic|tag|ads]
+!open [member|name|bots|leave|arabic|tag|ads]
 Unlocks [member|name|bots|leaving|arabic|tag|ads]
 〰〰〰〰〰〰
 !set rules <text>
@@ -56,7 +56,7 @@ Set <text> as rules
 !set about <text>
 Set <text> as about
 〰〰〰〰〰〰
-!gp?
+!gp
 Returns group settings
 〰〰〰〰〰〰
 !newlink
@@ -131,3 +131,4 @@ return {
   run = run 
 }
 end
+--developer : @unkownhacker
