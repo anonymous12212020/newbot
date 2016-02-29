@@ -44,31 +44,31 @@ help>
 درباره گروه
 !rules
 قوانین گروه
-!gp?
+!gp
 دیدن تنظیمات فعلی گروه
 !help
 لیست دستورات ربات
-!gp+ member 
+!close member 
 قفل ورود اعضا جدید
-!gp+ join
+!close join
 قفل ورود اعضا جدید توسط لینک
-!gp+ name
+!close name
 قفل اسم گروه
-!gp+ chat
+!close chat
 قفل چت ممنوع
-!gp+ ads
+!close ads
 قفل تبلیغات
 !gp+ leave
 قفل خروج=بن گروه
-!gp+ fosh
+!close fosh
 ممنوع کردن فحش
-!gp+ chat
+!close chat
 قفل چت ممنوع گروه
 !antibot enable 
 ورود ربات ها ممنوع
 !antibot disable
 ورود ربات ها ازاد
-!gp- xxxx
+!open xxxx
 [*name*leave*member]
 [*fosh*ads]
 [chat*join*photo]
@@ -103,7 +103,7 @@ help>
 در اوردن ایدی شخص مورد نظر
 !info 
 مخشصات فرد مورد نظر
-!gp?
+!gp
 تنظیمات فعلی گروه
 !filter + (word)
 اضافه کردن کلمه جدید به لیست
